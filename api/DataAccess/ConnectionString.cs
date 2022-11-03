@@ -4,7 +4,7 @@ namespace api.DataAccess
     {
         public string cs { get; set; }
 
-        private string server="h1use0ulyws4lqr1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:";
+        private string server="h1use0ulyws4lqr1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 
         private string port="3306";
 

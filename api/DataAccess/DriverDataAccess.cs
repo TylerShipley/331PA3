@@ -10,10 +10,8 @@ namespace api.DataAccess
             ConnectionString cs = new ConnectionString();
             using var con = new MySqlConnection(cs.cs);
             con.Open();
-            //this tells the garbage collector to get rid of it when this method is done.
-            // this is more secure then opening and closing
 
-            string stm = "SELECT * from drivers";
+            string stm = "SELECT * FROM Drivers";
             MySqlCommand cmd = new MySqlCommand(stm, con);
             MySqlDataReader rdr = cmd.ExecuteReader();
 
